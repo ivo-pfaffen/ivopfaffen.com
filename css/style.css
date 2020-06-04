@@ -1,0 +1,311 @@
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+:root 
+{
+--f-primary: 'Source Sans Pro', sans-serif;
+--f-secondary: 'Source Code Pro', monospace;
+
+--fw-reg: 300;
+--fw-bold: 900;
+
+--clr-light: #f9f8f8;
+--clr-dark: #343434;
+--clr-dark2: #4f4f4f;
+
+--clr-accent: #2384bc;
+
+--fs-h1: 3rem;
+--fs-h2: 2.25rem;
+--fs-h3: 1.25rem;
+--fs-body: 1rem;
+
+--bs: .25em .25em .75em rgba(0,0,0,.25),
+        .125em .125em .25em rgba(0,0,0,.15);
+
+}
+
+
+@media (min-width: 800px) 
+{
+    :root 
+    {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styles */
+
+body
+{
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--f-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section
+{
+    padding: 5em 2em;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+}
+
+strong { font-weight: var(--fw-bold);}
+
+:focus
+{
+    outline: 3px solid var(--clr-dark2);
+    outline-offset: 0px;
+}
+
+
+/* Buttons */
+
+.btn
+{
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover 
+{
+    transform: scale(1.1);
+}
+
+/* Typography */
+
+h1,
+h2,
+h3
+{
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+.section__title 
+{
+    margin-bottom: .4em;
+}
+
+.section__title--intro
+{
+    font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong
+{
+    display: block;
+}
+
+.section__subtitle
+{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro, 
+.section__subtitle--about
+{
+    background: var(--clr-accent);
+    font-family: var(--f-secondary);
+    padding: .25em 1em;
+    margin-bottom: 1em;
+} 
+
+
+
+/* Header */
+
+.nav
+{
+    display: none;
+}
+
+
+
+/* Intro */
+
+.intro
+{
+    position: relative;
+
+}
+
+.intro__img
+{
+    box-shadow: var(--bs);
+}
+
+.section__subtitle--intro
+{
+    display: inline-block;
+}
+
+
+@media (max-width: 600px)
+{
+    .intro__img
+    {
+        margin: 0 auto;
+    }
+
+    .section__subtitle--intro
+    {
+        text-align: center;
+        display: block;
+        
+    }
+
+
+    .section__title
+    {
+        text-align: center;
+    }
+
+    
+
+    
+}
+
+@media (min-width: 600px)
+{
+    .intro
+    {
+        display: grid;
+        width: min-content;
+        margin: 0 auto;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+
+    .intro__img
+    {
+        grid-area: img;
+        min-width: 250px;
+        position: relative;
+        z-index: 2;
+        top: -2em;
+    }
+
+    .section__subtitle--intro
+    {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        top: -.9em;
+        right: 2em;
+        width: calc(100% + .-9em);
+    }
+
+    .section__title
+    {
+        position: relative;
+        top: .25em;
+    }
+}
+
+
+/* My services */
+
+.my-services
+{
+    background-color: var(--clr-dark2);
+    background-image: url(../img/bg-03.jpg);
+    background-size: cover;
+    background-blend-mode: multiply; 
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services
+{
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after
+{
+    content: '';
+    display: block;
+    width: 5%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: .35;
+}
+
+.services
+{
+    margin-bottom: 4em;
+}
+
+.service
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media(min-width: 800px)
+{
+    .services
+    {
+        display: flex;
+        max-width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .service + .service
+    {
+        margin-left: 2em;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
