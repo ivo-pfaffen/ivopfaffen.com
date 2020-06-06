@@ -139,6 +139,14 @@ h3 { font-size: var(--fs-h3); }
     margin-bottom: 1em;
 } 
 
+.section__subtitle--work
+{
+    color: var(--clr-dark);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+
 
 
 /* Header */
@@ -296,7 +304,27 @@ h3 { font-size: var(--fs-h3); }
 }
 
 
+/* My work */
 
+.my-work
+{
+    background-color: var(--clr-light);
+    color: var(--clr-dark);
+    text-align: center;
+}
+
+.portfolio
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(500px, .5fr));
+}
+
+.portfolio__img
+{
+    max-width:90%;
+    height:auto;
+    margin: auto;
+}
 
 
 
