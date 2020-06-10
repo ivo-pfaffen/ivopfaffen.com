@@ -91,24 +91,31 @@
 
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title">My work</h2>
+            <h2 class="section__title section__title--work">My work</h2>
             <p class="section__subtitle"></p>
 
             <div class="portfolio">
-            <!-- Portfolio item 01 -->
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__item--btn">
-                        <img src="img/portfolio-thekey1.gif" alt="videogame 'The Key'" class="portfolio__img">
-                    </a>
-                </div>
 
-             <!-- Portfolio item 02 -->
-                <div class="portfolio__item">
-                    <!-- <h2 class="portfolio__title">VISUALIST CHALLENGE</h2> -->
-                    <a href="#" class="portfolio__item--btn">
-                        <img src="img/portfolio-visualist.gif" alt="#VisualistChallenge" class="portfolio__img">
+
+            <!-- Portfolio item 01 -->
+                <div class="portfolio__item p-light" id="p-thekey">
+                    <a class="overlay" href="https://globalgamejam.org/2020/games/key-0" target="_blank" >
+                        <div class="content vertical-center">
+                            <h2 class="portfolio__title">THE KEY</h2>
+                            <p class="portfolio__subtitle">Simple 2D platformer made in 48 hours for the Global Game Jam 2020</p>
+                        </div> 
                     </a>
                 </div>
+                
+                <div class="portfolio__item p-dark" id="p-visualistchallenge">
+                    <a class="overlay" href="https://visualistchallenge.com" target="_blank" >
+                        <div class="content vertical-center">
+                            <h2 class="portfolio__title">VISUALIST CHALLENGE</h2>
+                            <p class="portfolio__subtitle">Memo card game for <i>visualistapp.com</i>, a web platform designed for creatives</p>
+                        </div> 
+                    </a>
+                </div>
+             
 
             </div>
         </section>
