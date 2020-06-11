@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+        <!-- Open Graph data -->
+            <meta property="og:title" content="Ivo Pfaffen"/>
+            <meta property="og:description" content="Hi! I'm Ivo. This is my personal website. Come check it out! Cool projects inside ;)"/>
+            <meta property="og:url" content="ivopfaffen.me"/>
+            <meta property="og:image" content="../img/preview.png"/>
+
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title> Projects | Ivo Pfaffen</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+
+        Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/png" href="../img/favicon.png">
+
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- Unity -->
+
+          
+    </head>
+
+    <body> 
+        <header>
+
+            <button class="nav-back" aria-label="go back">
+                <span class="arrow"></span>
+            </button>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="../index.html" class="nav__link">Home</a> </li>
+                    <li class="nav__item"> <a href="../index.html#services" class="nav__link">My services</a> </li>
+                    <li class="nav__item"> <a href="../index.html#work" class="nav__link">My Work</a> </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <div class="portfolio-item-individual">
+            <h2 class="portfolio-item-individual__title"><strong>The Key</strong></h2>
+            <h3>Summary</h3>
+            <p>A futuristic, sci-fi platformer developed within 48 hours for the Global Game Jam 2020.
+                I composed the soundtrack, as well as designed and developed the game using the Unity engine.</p>
+        </div> 
+
+   
+
+
+        <section class="unity-game">
+            <div class="portfolio-item-individual">
+                <h3>Play it now!</h3>
+            </div> 
+
+            <script src="../project_files/TheKey/TemplateData/UnityProgress.js"></script>
+            <script src="../project_files/TheKey/Build/UnityLoader.js"></script>
+            <script>
+                var unityInstance = UnityLoader.instantiate("unityContainer", "../project_files/TheKey/Build/HTML5 build.json", {onProgress: UnityProgress});
+            </script>
+            <div class="webgl-content">
+                <div id="unityContainer" style="width: 960px; height: 600px"></div>
+            </div>
+        </section>
+
+
+        <div class="portfolio-item-individual portfolio-item-individual__sourcecode">
+            <h3>Source code & links</h3>
+            
+            <p>Check the <a href="#" class="portfolio-item__link" target="_blank">GitHub repo</a></p>
+            <p>Check the official <a href="https://globalgamejam.org/2020/games/key-0" class="portfolio-item__link" target="_blank">Global Game Jam</a> page for the game.</p>
+            <p>Play it on <a href="https://www.newgrounds.com/portal/view/747358" class="portfolio-item__link" target="_blank">Newgrounds</a>.</p>
+
+
+        </div> 
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:ivopfaffen@gmail.com" class="footer__link">ivopfaffen@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/ivo-pfaffen" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/ivo-pfaffen" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                
+            </ul>
+        </footer>
+
+
+        <script src="../js/index.js"></script>
+
+    </body>
+</html>

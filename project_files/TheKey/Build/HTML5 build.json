@@ -1,0 +1,17 @@
+{
+"companyName": "Global Game Jam 2020",
+"productName": "The Key",
+"productVersion": "1.0",
+"dataUrl": "HTML5 build.data.unityweb",
+"wasmCodeUrl": "HTML5 build.wasm.code.unityweb",
+"wasmFrameworkUrl": "HTML5 build.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "HTML5 build.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0f5"
+}
