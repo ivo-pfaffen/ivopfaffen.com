@@ -64,7 +64,7 @@
     }
 }
 
-@media (max-width: 520px) 
+@media (max-width: 540px) 
 {
     :root
     {
@@ -73,7 +73,7 @@
 }
 
 
-@media (max-width: 400px) 
+@media (max-width: 435px) 
 {
     :root
     {
@@ -1001,6 +1001,11 @@ h3 { font-size: var(--fs-h3); }
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.portfolio-item-individual__subtitle
+{
+    margin-bottom: 1.75em;
 }
 
 .portfolio-item-individual__sourcecode
