@@ -13,6 +13,9 @@ navLinks.forEach(link => {
     })
 }) 
 
+if(navBack != null)
+{
 navBack.addEventListener("click", () => {
     window.location.href = "../index.html";
 });
+}
