@@ -27,7 +27,6 @@
 --fs-h1: 3rem;
 --fs-h2: 2.7rem;
 --fs-h3: 1.25rem;
---fs-h4: 1.2rem;
 --fs-body: 1rem;
 
 --bs: .25em .25em .75em rgba(0,0,0,.25),
@@ -495,13 +494,60 @@ h3 { font-size: var(--fs-h3); }
     }
 }
 
+/* About me */
+
+
+.section__title--about
+{
+    color: var(--clr-dark);
+    text-align: center;
+    position: relative;
+
+
+    margin-top: -2em;
+}
+
+.section__title--about::after
+{
+    content: '';
+    display: block;
+    width: 5%;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: .35;
+}
+
+.about-me__body-title
+{
+    font-size: 1.35rem;
+    text-align: left;
+    max-width: 1000px;
+
+    margin-bottom: -1.25em;
+}
+
+.about-me__body
+{
+    font-size: 1.25rem;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-me__link
+{
+    color: var(--clr-dark);
+}
+
+
+
 
 /* My services */
 
-.my-services
+.services
 {
     background-color: var(--clr-light);
-    /* background-image: url(../img/bg-03.jpg); */
     background-size: cover;
     background-blend-mode: multiply; 
     color: var(--clr-dark);
@@ -535,6 +581,11 @@ h3 { font-size: var(--fs-h3); }
 {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.service__body
+{
+    font-size: 1.25rem;
 }
 
 @media(min-width: 800px)
@@ -580,6 +631,7 @@ h3 { font-size: var(--fs-h3); }
     width: 80%;
     max-width: 75em;
     margin: 0 auto;
+    padding: 0;
 }
 
 @media screen and (max-width: 87.5em) 
@@ -591,23 +643,17 @@ h3 { font-size: var(--fs-h3); }
 
 @media screen and (max-width: 61.625em) 
 {
-    .portfolio {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 61.625em) 
-{
-    .my-work .portfolio {
+    .work .portfolio {
         width: 100%;
         max-width: 100%;
     }
 }
 
 
+
 /* */
 
-.my-work
+.work
 {
     margin: -2em 0 0em 0;
 }
@@ -967,7 +1013,7 @@ h3 { font-size: var(--fs-h3); }
 
 .portfolio-item-individual__title
 {
-    margin-top: 1.5em;
+    margin-top: 1.2em;
 }
 
 @media(max-width: 800px)
@@ -1022,10 +1068,22 @@ h3 { font-size: var(--fs-h3); }
     align-self: center;
 }
 
+.portfolio-item-individual__soundtrack
+{
+    margin-top: -3em;
+}
+
+.portfolio-item-individual__soundcloud
+{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
 #unityContainer
 {
     width: calc(960px / var(--size-divisor));
     height: calc(600px / var(--size-divisor));
+
 }
 
 

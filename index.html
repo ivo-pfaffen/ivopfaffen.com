@@ -41,6 +41,7 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"> <a href="#home" class="nav__link">Home</a> </li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">About me</a> </li>
                     <li class="nav__item"> <a href="#services" class="nav__link">My services</a> </li>
                     <li class="nav__item"> <a href="#work" class="nav__link">My Work</a> </li>
                 </ul>
@@ -54,6 +55,31 @@
             <img src="img/ivp-pfaffen-01.png" alt="a picture of myself :)" class="intro__img">
         </section>
 
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <header>
+                <h2 class="section__title section__title--about">Who I am</h2>
+            </header>
+            <div class="about-me__body">
+                <p class="about-me__body-title"> <b>Hey there!</b> 👋 I'm Ivo. </p>
+                <p> 
+                    <br> I am a high school student located in Cordoba, Argentina. Since I was a kid I've loved
+                    creating things. I came across programming 💻 when I was 15, and instantly fell in love. 
+                    <br> Today I'm a freelance game dev 🎮 looking forward to keep learning and creating 
+                    cool stuff. 
+                    <br> Apart from programming, I enjoy composing and producing music 🎹
+                    <!-- should I add this line? 🤔😂-->
+                    <!-- <br> Also, I'm currently looking for interships, so feel free to <a href="#footer" class="about-me__link">contact me</a>. --> 
+                </p> 
+                    Contact me on <a href="https://www.linkedin.com/in/ivo-pfaffen" class="about-me__link" target="_blank">Linkedin</a>,
+                    <a href="https://github.com/ivo-pfaffen" class="about-me__link" target="_blank">GitHub</a> or
+                    just send me an <a href="mailto:ivopfaffen@gmail.com" class="about-me__link" target="_blank">email</a>.
+                <p> 
+            </div>
+        </section>
+
+        
 
         <!-- My Services -->
         <section class="my-services" id="services">
@@ -61,37 +87,21 @@
             <div class="services">
                 <div class="service">
                     <h3>Game Development</h3>
-                    <p>I develop and design awesome games using Unity and GameMaker Studio, 
+                    <p class="service__body">I develop and design cool games using Unity and GameMaker Studio, 
                         programming in C# and JavaScript. I have succesfully 
                         shipped mobile, web and PC games, handling everything from design to publishing</p>
                 </div> <!-- / service 1 -->
-
+        
                 <div class="service">
                     <h3>Soundtrack + SFX production</h3>
-                    <p>I compose and produce soundtracks and sound effects for videogames, having deep
-                        understanding of Fruity Loops Studio, Audacity and Ableton. Check my
-                        music under the "My Work" section!</p>
+                    <p class="service__body">I compose and produce soundtracks and sound effects for videogames, having used (and being proficient in)
+                        Fruity Loops Studio, Audacity and Ableton. Check my
+                        music in the section below!</p>
                 </div> <!-- / service 2 -->
             </div> <!-- services -->
-            
+                    
             <!--    <a href="#work" class="btn">My Work</a>    -->
         </section>
-
-
-        <!-- About me 
-
-        <section class="about-me" id="about">
-            <header>
-                <h2 class="section__title section__title--about">Who I am</h2>
-                <p class="section__subtitle section__subtitle--about"></p>
-            </header>
-
-            <div class="about-me__body">
-                <p></p>
-            </div>
-        </section>
-
-        -->
 
 
         <!-- My Work -->
@@ -107,7 +117,7 @@
                     <a class="overlay" href="projects/the-key.html">
                         <div class="content vertical-center">
                             <h2 class="portfolio__title">THE KEY</h2>
-                            <p class="portfolio__subtitle">Simple 2D platformer made in 48 hours for the Global Game Jam 2020</p>
+                            <p class="portfolio__subtitle">Simple 2D platformer made in 48 hours for the Global Game Jam 2020 contest</p>
                         </div> 
                     </a>
                 </div>
@@ -126,7 +136,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <a href="mailto:ivopfaffen@gmail.com" class="footer__link">ivopfaffen@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://github.com/ivo-pfaffen" target="_blank"><i class="fab fa-github"></i></a></li>
