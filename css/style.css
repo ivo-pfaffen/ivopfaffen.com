@@ -643,7 +643,6 @@ h3 { font-size: var(--fs-h3); }
     width: 80%;
     max-width: 75em;
     margin: 0 auto;
-    padding: 0;
 }
 
 @media screen and (max-width: 87.5em) 
@@ -666,7 +665,16 @@ h3 { font-size: var(--fs-h3); }
         width: 100%;
         max-width: 100%;
     }
+
 }
+
+@media screen and (max-width: 800px)
+{
+    .my-work
+    {
+        padding: 0;
+    }
+} 
 
 
 
@@ -846,6 +854,11 @@ h3 { font-size: var(--fs-h3); }
 
 @media screen and (max-width: 460px) 
 {
+    .portfolio__item
+    {
+        height: 17em;
+    }
+    
     .portfolio__item h2
     {
         font-size: 2.5em;
@@ -1000,10 +1013,10 @@ h3 { font-size: var(--fs-h3); }
 
 .footer__p
 {
-    font-size: 1rem;
-    margin-top: 2.5em;
-    margin-bottom: -1em;
-    opacity: .7;
+    font-size: .8rem;
+    margin-top: 2em;
+    margin-bottom: -1.75em;
+    opacity: .6;
 }
 
 
