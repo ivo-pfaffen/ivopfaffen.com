@@ -1,3 +1,3 @@
 # ivopfaffen.me
 🌐 My personal website, come check it out!
-## ivopfaffen.me
+## http://ivopfaffen.me
