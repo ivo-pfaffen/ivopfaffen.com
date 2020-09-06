@@ -799,6 +799,8 @@ h3 { font-size: var(--fs-h3); }
 /* */
 @media screen and (max-width: 61.625em) 
 {
+    
+
     .portfolio__item {
         height: 20em;
         margin: 0 auto;
@@ -840,6 +842,7 @@ h3 { font-size: var(--fs-h3); }
 
 @media screen and (max-width: 570px) 
 {
+
     .portfolio__item h2
     {
         font-size: 3em;
@@ -857,8 +860,9 @@ h3 { font-size: var(--fs-h3); }
     .portfolio__item
     {
         height: 17em;
+
     }
-    
+
     .portfolio__item h2
     {
         font-size: 2.5em;
@@ -953,6 +957,18 @@ h3 { font-size: var(--fs-h3); }
     background-size: cover;
 }
 
+#p-twinrun
+{
+    background: url("../img/portfolio-twinrun1.gif") no-repeat center center;
+    background-size: cover;
+}
+
+#p-spacerewinders
+{
+    background: url("../img/portfolio-spacerewinders1.gif") no-repeat center center;
+    background-size: cover;
+}
+
 
 /* footer */
 
@@ -1041,6 +1057,26 @@ h3 { font-size: var(--fs-h3); }
 {
     display: inline-block;
 }
+
+/* itch.io container */
+
+.itch-game-container 
+{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.itch-game-iframe 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
 /* individual portfolio item styles */
 
