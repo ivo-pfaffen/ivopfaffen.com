@@ -586,7 +586,7 @@ h3 { font-size: var(--fs-h3); }
 
 .services
 {
-    margin-bottom: 4em;
+    padding-bottom: 3.5em;
 }
 
 .service
@@ -614,8 +614,14 @@ h3 { font-size: var(--fs-h3); }
     {
         margin-left: 2em;
     }
+}
 
-
+@media(max-width: 800px)
+{
+    .services
+    {
+        padding-bottom: 8em;
+    }
 }
 
 
@@ -1062,6 +1068,7 @@ h3 { font-size: var(--fs-h3); }
 
 .itch-game-container 
 {
+    margin-bottom: 3em;
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
@@ -1123,6 +1130,7 @@ h3 { font-size: var(--fs-h3); }
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -1em;
 }
 
 .portfolio-item-individual__subtitle
@@ -1149,7 +1157,13 @@ h3 { font-size: var(--fs-h3); }
     margin-top: -3em;
 }
 
-.portfolio-item-individual__soundcloud
+.portfolio-item-individual__widget
+{
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.portfolio-item-individual__itch
 {
     text-align: center;
     margin-bottom: 3em;
