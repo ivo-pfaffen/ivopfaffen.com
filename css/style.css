@@ -953,7 +953,7 @@ h3 { font-size: var(--fs-h3); }
 
 #p-thekey 
 {
-    background: url("../img/portfolio-thekey1.gif") no-repeat center center;
+    background: url("../img/portfolio-thekey.gif") no-repeat center center;
     background-size: cover;
 }
 
@@ -965,13 +965,13 @@ h3 { font-size: var(--fs-h3); }
 
 #p-twinrun
 {
-    background: url("../img/portfolio-twinrun1.gif") no-repeat center center;
+    background: url("../img/portfolio-twinrun.gif") no-repeat center center;
     background-size: cover;
 }
 
 #p-spacerewinders
 {
-    background: url("../img/portfolio-spacerewinders1.gif") no-repeat center center;
+    background: url("../img/portfolio-spacerewinders.gif") no-repeat center center;
     background-size: cover;
 }
 
