@@ -70,16 +70,30 @@
         <div class="portfolio-item-individual">
             <h3 class="portfolio-item-individual__subtitle">Play it now!</h3>
         </div> 
+
         <section class="unity-game">
+            <a class="unity-game__playbtn">(click here to load game)</a>
             <script src="../project_files/TheKey/TemplateData/UnityProgress.js"></script>
             <script src="../project_files/TheKey/Build/UnityLoader.js"></script>
-            <script>
-                var unityInstance = UnityLoader.instantiate("unityContainer", "../project_files/TheKey/Build/HTML5 build.json", {onProgress: UnityProgress});
-            </script>
             <div class="webgl-content">
-                <div id="unityContainer"></div>
+                <div id="unityContainer">
+                </div>
             </div>
         </section>
+
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav__link">Home</a> </li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">About me</a> </li>
+                    <li class="nav__item"> <a href="#services" class="nav__link">My services</a> </li>
+                    <li class="nav__item"> <a href="#work" class="nav__link">My Work</a> </li>
+                </ul>
+            </nav>
+        </header>
 
 
         
@@ -113,6 +127,7 @@
         </footer>
 
 
+        <script src="../js/the-key.js"></script>
         <script src="../js/index.js"></script>
 
     </body>
