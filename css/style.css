@@ -183,6 +183,10 @@ h3 { font-size: var(--fs-h3); }
     font-size: var(--fs-super-super-small);
 }
 
+.cool-people-text {
+    color: var(--clr-dark2);
+}
+
 .section__title 
 {
     margin-bottom: .4em;
@@ -432,6 +436,7 @@ h3 { font-size: var(--fs-h3); }
     .intro__img
     {
         margin: 0 auto;
+        max-width: 300px;
     }
 
     .section__subtitle--intro
