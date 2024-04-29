@@ -1,13 +1,11 @@
 let portfolioContainer = document.querySelector("#portfolio-items");
 
 function portfolioItemTemplate(data) {
-    if(data.overlayPath != "") {
-        data.overlayPath = `href=${data.overlayPath}`;
-    }
+    let overlayPath = data.overlayPath != "" ? `href=${data.overlayPath}` : "";
 
     return `
         <div class="portfolio__item p-dark" id="${data.id}">
-            <a class="overlay" ${data.overlayPath}>
+            <a class="overlay" ${overlayPath}>
                 <div class="content vertical-center">
                     <h2 class="portfolio__title">${data.title}</h2>
                     <p class="portfolio__subtitle">${data.subtitle}</p>
@@ -25,6 +23,13 @@ const PortfolioItemCategory = {
 };
   
 var portfolioItems = [
+    {
+        categories: [PortfolioItemCategory.School, PortfolioItemCategory.AI],
+        id: "p-rnntextclassifier",
+        overlayPath: "https://github.com/ivo-pfaffen/nn-text-classifier",
+        title: "PYTORCH TEXT CLASSIFICATION",
+        subtitle: "Vanilla RNN for text classification with PyTorch"
+    },
     {
         categories: [PortfolioItemCategory.Games],
         id: "p-spacerewinders",
@@ -59,13 +64,6 @@ var portfolioItems = [
         overlayPath: "",
         title: "VISUALIST CHALLENGE",
         subtitle: "Memo card game for <i>visualistapp.com</i>, a web platform designed for creatives"
-    },
-    {
-        categories: [PortfolioItemCategory.School, PortfolioItemCategory.AI],
-        id: "p-rnntextclassifier",
-        overlayPath: "https://github.com/ivo-pfaffen/nn-text-classifier",
-        title: "PYTORCH TEXT CLASSIFICATION",
-        subtitle: "Vanilla RNN for text classification with PyTorch"
     }
 ]
 
@@ -96,4 +94,3 @@ function instantiatePortfolioItems(itemCategory) {
 
 
 export {instantiatePortfolioItems, PortfolioItemCategory}
-

@@ -1,9 +1,6 @@
-import {instantiatePortfolioItems, PortfolioItemCategory} from "./portfolio-items.js"
-
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
 const navBack = document.querySelector(".nav-back");
-const navPortfolioCategory = document.querySelectorAll(".portfolio-toggle");
 
 navToggle.addEventListener("click", () => {
     document.body.classList.toggle("nav-open");
@@ -20,11 +17,3 @@ if(navBack != null) {
         window.location.href = "../index.html";
     });
 }
-
-instantiatePortfolioItems(PortfolioItemCategory.Default);
-
-navPortfolioCategory.forEach(button => {
-    button.addEventListener("click", () => {
-        instantiatePortfolioItems(button.id);
-    });
-})
