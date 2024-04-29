@@ -19,6 +19,7 @@
 --fw-bold: 900;
 
 --clr-light: #f9f8f8;
+--clr-dark2-transp: #4f4f4f2b;
 --clr-dark: #343434;
 --clr-dark2: #4f4f4f;
 
@@ -640,6 +641,28 @@ h3 { font-size: var(--fs-h3); }
 
 /* My work */
 
+.my-work__bar {
+    display: flex;
+    justify-content: center;
+}
+
+.my-work__button {
+    border: none;
+    background: none;
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark2);
+    margin: 0 1rem 0 1rem;
+}
+
+
+.my-work__button:hover
+{
+    background: var(--clr-dark2-transp);
+    opacity: .7;
+    cursor: pointer;
+}
+
 
 /* animation */
 
@@ -991,6 +1014,12 @@ h3 { font-size: var(--fs-h3); }
 #p-frank
 {
     background: url("../img/portfolio-frank.gif") no-repeat center center;
+    background-size: cover;
+}
+
+#p-rnntextclassifier
+{
+    background: url("../img/portfolio-rnntextclassifier.gif") no-repeat center center;
     background-size: cover;
 }
 
