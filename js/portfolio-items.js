@@ -2,7 +2,7 @@ let portfolioContainer = document.querySelector("#portfolio-items");
 
 function portfolioItemTemplate(data) {
     if(data.overlayPath != "") {
-        data.overlayPath = "href=" + data.overlayPath;
+        data.overlayPath = `href=${data.overlayPath}`;
     }
 
     return `
