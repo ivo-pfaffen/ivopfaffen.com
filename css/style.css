@@ -28,7 +28,7 @@
 --fs-h1: 3rem;
 --fs-h2: 2.7rem;
 --fs-h3: 1.25rem;
---fs-body: 1rem;
+--fs-body: 0.9rem;
 --fs-super-super-small: .001rem;
 
 --bs: .25em .25em .75em rgba(0,0,0,.25),
@@ -540,7 +540,7 @@ h3 { font-size: var(--fs-h3); }
 
 .about-me__body-title
 {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     text-align: left;
     max-width: 1000px;
 
@@ -549,7 +549,7 @@ h3 { font-size: var(--fs-h3); }
 
 .about-me__body
 {
-    font-size: 1.25rem;
+    font-size: 1.225rem;
     text-align: left;
     max-width: 900px;
     margin: 0 auto;

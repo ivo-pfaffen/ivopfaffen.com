@@ -22,7 +22,7 @@ const PortfolioItemCategory = {
     School: "school"
 };
   
-var portfolioItems = [
+const portfolioItems = [
     {
         categories: [PortfolioItemCategory.School, PortfolioItemCategory.AI],
         id: "p-rnntextclassifier",
