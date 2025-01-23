@@ -1025,7 +1025,7 @@ h3 { font-size: var(--fs-h3); }
 
 #p-functionalgeometrydsl
 {
-    background: url("../img/portfolio-functionalgeometrydsl.mp4") no-repeat center center;
+    background: url("../img/portfolio-functionalgeometrydsl.gif") no-repeat center center;
     background-size: cover;
 }
 
@@ -1052,6 +1052,7 @@ h3 { font-size: var(--fs-h3); }
     align-self: center;
 }
 
+
 .footer__link:hover,
 .social-list__link:hover
 {
@@ -1070,7 +1071,7 @@ h3 { font-size: var(--fs-h3); }
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 1em 0 0;
+    margin: 0 0 0;
     padding: 0;
     font-size: 1.75em;
 
