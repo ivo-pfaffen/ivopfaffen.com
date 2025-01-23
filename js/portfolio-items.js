@@ -27,8 +27,15 @@ const portfolioItems = [
         categories: [PortfolioItemCategory.School, PortfolioItemCategory.AI],
         id: "p-rnntextclassifier",
         overlayPath: "https://github.com/ivo-pfaffen/nn-text-classifier",
-        title: "PYTORCH TEXT CLASSIFICATION",
+        title: "PYTORCH ENTITY CLASSIFICATION",
         subtitle: "Vanilla RNN for text classification with PyTorch"
+    },
+    {
+        categories: [PortfolioItemCategory.School],
+        id: "p-functionalgeometrydsl",
+        overlayPath: "https://github.com/ivo-pfaffen/functional-geometry-dsl",
+        title: "FUNCTIONAL GEOMETRY DSL",
+        subtitle: "Domain-specific langauge made in Haskell to draw geometric graphics recursively"
     },
     {
         categories: [PortfolioItemCategory.Games],
