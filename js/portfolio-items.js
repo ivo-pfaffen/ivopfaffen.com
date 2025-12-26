@@ -24,6 +24,13 @@ const PortfolioItemCategory = {
   
 const portfolioItems = [
     {
+        categories: [PortfolioItemCategory.AI],
+        id: "p-kaggle",
+        overlayPath: "https://github.com/ivo-pfaffen/kaggle-spaceship-titanic",
+        title: "KAGGLE COMPETITION",
+        subtitle: "My entry for Kaggle's \"Spaceship Titanic\" competition"
+    },
+    {
         categories: [PortfolioItemCategory.School, PortfolioItemCategory.AI],
         id: "p-rnntextclassifier",
         overlayPath: "https://github.com/ivo-pfaffen/nn-text-classifier",
