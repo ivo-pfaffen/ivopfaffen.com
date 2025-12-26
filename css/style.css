@@ -1029,6 +1029,12 @@ h3 { font-size: var(--fs-h3); }
     background-size: cover;
 }
 
+#p-kaggle
+{
+    background: url("../img/portfolio-kaggle.gif") no-repeat center center;
+    background-size: cover;
+}
+
 /* footer */
 
 .footer
