@@ -24,6 +24,13 @@ const PortfolioItemCategory = {
   
 const portfolioItems = [
     {
+        categories: [],
+        id: "p-flowfocus",
+        overlayPath: "https://flowfocus.ivopfaffen.com",
+        title: "FLOWFOCUS",
+        subtitle: "A Flowtime-style timer built and deployed in 2 hours"
+    },
+    {
         categories: [PortfolioItemCategory.AI],
         id: "p-kaggle",
         overlayPath: "https://github.com/ivo-pfaffen/kaggle-spaceship-titanic",

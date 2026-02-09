@@ -1035,6 +1035,12 @@ h3 { font-size: var(--fs-h3); }
     background-size: cover;
 }
 
+#p-flowfocus
+{
+    background: url("../img/portfolio-flowfocus.gif") no-repeat center center;
+    background-size: cover;
+}
+
 /* footer */
 
 .footer
