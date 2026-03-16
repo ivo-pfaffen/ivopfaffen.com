@@ -2,9 +2,11 @@ const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
 const navBack = document.querySelector(".nav-back");
 
-navToggle.addEventListener("click", () => {
-    document.body.classList.toggle("nav-open");
-});
+if (navToggle != null) {
+    navToggle.addEventListener("click", () => {
+        document.body.classList.toggle("nav-open");
+    });
+}
 
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
