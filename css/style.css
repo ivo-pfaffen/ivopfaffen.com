@@ -105,6 +105,7 @@ html
     overflow-x: hidden;
 
     box-sizing: border-box;
+    background: #262525;
 
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -118,6 +119,21 @@ body
     font-family: var(--f-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+}
+
+.site-layout
+{
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background: #262525;
+}
+
+.site-surface
+{
+    flex: 1;
+    background: var(--clr-light);
 }
 
 section
@@ -1346,6 +1362,7 @@ header
     color: var(--clr-light);
     text-align: center;
     padding: 1.1em 0 0.9em;
+    margin-top: auto;
 }
 
 .footer a 
