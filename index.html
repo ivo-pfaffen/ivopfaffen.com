@@ -18,15 +18,14 @@
             <meta property="og:image" content="img/preview.png"/>
 
         <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ivo Pfaffen</title>
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+
-        Pro:300,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&amp;family=Source+Sans+Pro:wght@300;400;600;900&amp;display=swap" rel="stylesheet">
         
         <link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -36,11 +35,12 @@
 
     <body> 
         <header>
-            <nav class="nav">
+            <nav class="nav" aria-label="Primary navigation">
                 <ul class="nav__list">
-                    <li class="nav__item"> <a href="#home" class="nav__link">Home</a> </li>
+                    <li class="nav__item"> <a href="#home" class="nav__link" aria-current="page">Home</a> </li>
                     <li class="nav__item"> <a href="#about" class="nav__link">About</a> </li>
                     <li class="nav__item"> <a href="#work" class="nav__link">Work</a> </li>
+                    <li class="nav__item"> <a href="posts/index.html" class="nav__link">Posts</a> </li>
                 </ul>
             </nav>
         </header>
@@ -58,7 +58,7 @@
             <div class="about-me__body">
                 <p> 
                     I'm a fourth-year <b>computer science student</b> at 
-                    <a href="https://www.famaf.unc.edu.ar" class="about-me__link" target="_blank"> FaMAF - UNC</a>.
+                    <a href="https://www.famaf.unc.edu.ar" class="about-me__link" target="_blank" rel="noopener noreferrer"> FaMAF - UNC</a>.
                     <br><br> 
                     
                     <!-- 
@@ -69,7 +69,7 @@
                     -->
                     
                     This site highlights some of my projects and technical work. If you'd like to connect, reach out on
-                    <a href="https://www.linkedin.com/in/ivo-pfaffen" class="about-me__link" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ivo-pfaffen" class="about-me__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     or email me at <i>ivopfaffen@(google's mailing service).com</i>.
                 </p> 
             </div>
@@ -98,8 +98,8 @@
         <footer class="footer" id="footer">
             <!-- <a href="mailto:ivopfaffen@gmail.com" class="footer__link">ivopfaffen(at)gmail.com</a> -->
             <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com/ivo-pfaffen" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/ivo-pfaffen" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com/ivo-pfaffen" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/ivo-pfaffen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
             <p class="footer__p">Made with ❤ by Ivo Pfaffen</p>
         </footer>
