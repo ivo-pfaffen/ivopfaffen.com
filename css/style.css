@@ -16,7 +16,7 @@
 --f-secondary: 'Source Code Pro', monospace;
 
 --fw-reg: 300;
---fw-bold: 900;
+--fw-bold: 600;
 
 --clr-light: #f9f8f8;
 --clr-dark2-transp: #4f4f4f2b;
@@ -653,7 +653,20 @@ header
 
 .post-body p
 {
-    margin: 0;
+    margin: 0 0 0.85rem;
+}
+
+.post-body a
+{
+    color: inherit;
+    text-decoration: underline;
+    opacity: 0.85;
+    transition: opacity 150ms ease;
+}
+
+.post-body a:hover
+{
+    opacity: 1;
 }
 
 .post-body__end
