@@ -23,6 +23,7 @@
         href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&amp;family=Source+Sans+Pro:wght@300;400;600;900&amp;display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/png" href="../img/favicon.png">
+    <link rel="alternate" type="application/rss+xml" title="Posts de Ivo Pfaffen" href="https://ivopfaffen.com/rss.xml">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -44,7 +45,7 @@
                 <a class="post-page__back" href="index.html">← All posts</a>
 
                 <div class="post-page__header">
-                    <p class="post-page__meta"><time datetime="2026-08-06">14 de agosto de 2026</time></p>
+                    <p class="post-page__meta"><time datetime="2026-08-14">14 de agosto de 2026</time></p>
                     <h1 class="intro__lead post-page__title">La singularidad</h1>
                 </div>
 
@@ -194,6 +195,20 @@
 
                     <p class="post-body__end" aria-label="Fin del post"><span aria-hidden="true">#</span></p>
                 </div>
+
+                <form class="newsletter newsletter__form" aria-label="Suscripción por email"
+                    action="https://buttondown.com/api/emails/embed-subscribe/ivopfaffen" method="post" novalidate>
+                    <label class="sr-only" for="newsletter-email">Tu email</label>
+                    <input class="newsletter__input" id="newsletter-email" type="email" name="email"
+                        autocomplete="email" placeholder="email" aria-describedby="newsletter-error" required>
+                    <input type="hidden" name="embed" value="1">
+                    <button class="newsletter__button" type="submit" aria-label="Suscribirme por email">
+                        <span class="newsletter__arrow" aria-hidden="true">→</span>
+                        <span class="newsletter__check" aria-hidden="true">✓</span>
+                    </button>
+                    <span class="newsletter__error" id="newsletter-error" role="alert" hidden></span>
+                </form>
+                <!-- jaja siempre sale el tick xd -->
             </article>
         </main>
     </div>
@@ -209,6 +224,7 @@
         </ul>
         <p class="footer__p">Made with ❤ by Ivo Pfaffen</p>
     </footer>
+    <script src="../js/newsletter.js"></script>
 </body>
 
 </html>

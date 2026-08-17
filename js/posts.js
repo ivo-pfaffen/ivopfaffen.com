@@ -41,6 +41,38 @@ if (!showTrain && starField) {
     }
 }
 
+if (spaceScene && !showTrain && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const trailCharacters = ['.', '+', '*'];
+    let lastTrailAt = 0;
+    let lastTrailX = 0;
+    let lastTrailY = 0;
+    let trailIndex = 0;
+
+    spaceScene.addEventListener('pointermove', (event) => {
+        const now = performance.now();
+        const distance = Math.hypot(event.clientX - lastTrailX, event.clientY - lastTrailY);
+
+        if ((event.pointerType && event.pointerType !== 'mouse') || now - lastTrailAt < 45 || distance < 9) {
+            return;
+        }
+
+        const bounds = spaceScene.getBoundingClientRect();
+        const trailStar = document.createElement('span');
+
+        trailStar.className = 'space-scene__trail';
+        trailStar.textContent = trailCharacters[trailIndex % trailCharacters.length];
+        trailStar.style.left = `${event.clientX - bounds.left}px`;
+        trailStar.style.top = `${event.clientY - bounds.top}px`;
+        spaceScene.appendChild(trailStar);
+        trailStar.addEventListener('animationend', () => trailStar.remove(), { once: true });
+
+        lastTrailAt = now;
+        lastTrailX = event.clientX;
+        lastTrailY = event.clientY;
+        trailIndex += 1;
+    });
+}
+
 if (trainFrames.length > 0 && showTrain) {
     const wheelFrames = [
         [
