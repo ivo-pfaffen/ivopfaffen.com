@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTLJLC9LVL"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XTLJLC9LVL');
-        </script>
 
-        <!-- Open Graph data -->
-            <meta property="og:type" content="website"/>
-            <meta property="og:title" content="Ivo Pfaffen"/>
-            <meta property="og:description" content="Software developer and computer science student. Selected projects and experience."/>
-            <meta property="og:url" content="ivopfaffen.me"/>
-            <meta property="og:image" content="img/preview.png"/>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTLJLC9LVL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XTLJLC9LVL');
+    </script>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ivo Pfaffen</title>
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    <!-- Open Graph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ivo Pfaffen" />
+    <meta property="og:description"
+        content="Software developer and computer science student. Selected projects and experience." />
+    <meta property="og:url" content="ivopfaffen.me" />
+    <meta property="og:image" content="img/preview.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivo Pfaffen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&amp;family=Source+Sans+Pro:wght@300;400;600;900&amp;display=swap" rel="stylesheet">
-        
-        <link rel="icon" type="image/png" href="img/favicon.png">
-        <link rel="alternate" type="application/rss+xml" title="Posts de Ivo Pfaffen" href="https://ivopfaffen.com/rss.xml">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&amp;family=Source+Sans+Pro:wght@300;400;600;900&amp;display=swap"
+        rel="stylesheet">
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="alternate" type="application/rss+xml" title="Posts de Ivo Pfaffen" href="https://ivopfaffen.com/rss.xml">
 
-    </head>
+    <link rel="stylesheet" href="css/style.css">
 
-    <body class="site-layout">
-        <div class="site-surface">
+</head>
+
+<body class="site-layout">
+    <div class="site-surface">
         <header>
             <nav class="nav" aria-label="Primary navigation">
                 <ul class="nav__list">
@@ -54,35 +56,42 @@
             </div>
         </section>
 
-        
+
         <!-- About me -->
         <section class="about-me" id="about">
             <div class="about-me__body">
-                <p> 
-                    I'm a fourth-year <b>computer science student</b> at 
-                    <a href="https://www.famaf.unc.edu.ar" class="about-me__link" target="_blank" rel="noopener noreferrer"> FaMAF - UNC</a>.
-                    <br><br> 
-                    
+                <p>
+                    I build <b>software</b> solutions for leading energy, aerospace and telecom companies at <a
+                        href="https://www.sytex.io" class="about-me__link" target="_blank"
+                        rel="noopener noreferrer">Sytex</a> (YC S22).
+                    <br><br>
+
+                    I'm also a fourth-year <b>computer science student</b> at
+                    <a href="https://www.famaf.unc.edu.ar" class="about-me__link" target="_blank"
+                        rel="noopener noreferrer"> FaMAF - UNC</a>.
+                    <br><br>
+
                     <!-- 
                     (Not anymore :p) updating soon ;)
                     I'm currently working as a <b>contractor</b> for <b>Scale AI</b>, writing and reviewing high-quality code
                     for generative AI training workflows across a range of languages and technologies.
                     <br><br>
                     -->
-                    
+
                     This site highlights some of my projects and technical work. If you'd like to connect, reach out on
-                    <a href="https://www.linkedin.com/in/ivo-pfaffen" class="about-me__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/ivo-pfaffen" class="about-me__link" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
                     or email me at <i>ivopfaffen@(google's mailing service).com</i>.
-                </p> 
+                </p>
             </div>
         </section>
 
-        
+
         <!-- My Work -->
         <section class="my-work" id="work">
             <div class="my-work__header">
                 <p class="my-work__intro">Selected work across games, AI, and academic projects.</p>
-                <div class="my-work__bar"> 
+                <div class="my-work__bar">
                     <button class="my-work__button portfolio-toggle" id="games"> Games </button>
                     <button class="my-work__button portfolio-toggle" id="ai"> AI </button>
                     <button class="my-work__button portfolio-toggle" id="school"> School </button>
@@ -95,21 +104,26 @@
 
             </div>
         </section>
-        </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="footer" id="footer">
-            <!-- <a href="mailto:ivopfaffen@gmail.com" class="footer__link">ivopfaffen(at)gmail.com</a> -->
-            <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com/ivo-pfaffen" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/ivo-pfaffen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-            </ul>
-            <p class="footer__p">Made with ❤ by Ivo Pfaffen</p>
-        </footer>
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <!-- <a href="mailto:ivopfaffen@gmail.com" class="footer__link">ivopfaffen(at)gmail.com</a> -->
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/ivo-pfaffen"
+                    target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"
+                        aria-hidden="true"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/ivo-pfaffen"
+                    target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"
+                        aria-hidden="true"></i></a></li>
+        </ul>
+        <p class="footer__p">Made with ❤ by Ivo Pfaffen</p>
+    </footer>
 
 
-        <script src="js/index.js"></script>
-        <script type="module" src="js/instantiatePortfolioItems.js"></script>
+    <script src="js/index.js"></script>
+    <script type="module" src="js/instantiatePortfolioItems.js"></script>
 
-    </body>
+</body>
+
 </html>
